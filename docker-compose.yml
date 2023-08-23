@@ -1,0 +1,21 @@
+version: '3'
+  samba:
+    container_name: default
+    build: default/
+    env_file:
+      - default.env
+    ports:
+      - "900:900/tcp"
+    volumes:
+      - ${DVS_LOCAL_SHARE_PATH}:/default
+    networks:
+      dvs:
+          ipv4_address: 172.28.28.28
+    restart: "always"
+
+  networks:
+    dvs:
+      ipam:
+          driver: default
+          config:
+              - subnet: 172.28.28.0/24
