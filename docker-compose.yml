@@ -1,5 +1,6 @@
 version: '3'
-  samba:
+services:
+  game:
     container_name: default
     build: default/
     env_file:
@@ -13,9 +14,9 @@ version: '3'
           ipv4_address: 172.28.28.28
     restart: "always"
 
-  networks:
-    dvs:
-      ipam:
-          driver: default
-          config:
-              - subnet: 172.28.28.0/24
+networks:
+  dvs:
+    ipam:
+        driver: default
+        config:
+            - subnet: 172.28.28.0/24

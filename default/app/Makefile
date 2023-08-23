@@ -1,6 +1,6 @@
 
-morskoyboy: morskoyboy.c
-	gcc morskoyboy.c -o morskoyboy
+morskoyboy: 
+	gcc morskoyboy.cpp -o morskoyboy
 
 clear:
 	rm -rf morskoyboy
