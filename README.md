@@ -12,10 +12,7 @@
 
    *** Сборка и запуск ***
 
-git clone https://github.com/Asyusha95/game
-cd game
-sudo docker-compose build
-sudo docker run -it game_game
+git clone https://github.com/Asyusha95/game && cd game && sudo docker-compose build && sudo docker run -it game_game
 
     *** Превью ***
 
