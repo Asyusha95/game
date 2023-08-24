@@ -2,13 +2,20 @@
     *** Описание ***
 
 /"""""""\   Консольная игра "Морской бой" в контейнере
-|  ^  ^ |   Сборка: sudo docker-compose build
-|   &   |   Запуск: sudo docker run -it repos_game
+|  ^  ^ |   1 - корабль
+|   &   |   X - ранен/убит
 |  ___  |   Каретка +
 \_______/   Управление кареткой клавишами на цифровой клавиатуре,
 включите NumLock
 Чтобы выйти, нажмите CTRL+C
 Автор: Артёмов В.В.
+
+   *** Сборка и запуск ***
+
+git clone https://github.com/Asyusha95/game
+cd game
+sudo docker-compose build
+sudo docker run -it game_game
 
     *** Превью ***
 
